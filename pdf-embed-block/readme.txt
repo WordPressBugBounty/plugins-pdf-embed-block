@@ -3,7 +3,7 @@ Contributors: bplugins, abuhayat, charlescormier
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, pdf, embed pdf, display pdf, Gutenberg block
 Requires at least: 6.2+
-Tested up to: 6.7.1
+Tested up to: 6.7.2
 Stable tag: 1.0.2
 Requires PHP: 7.1
 License: GPLv3 or later
