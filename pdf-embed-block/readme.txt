@@ -1,9 +1,9 @@
-=== PDF Embed Block - Embed PDF file on your web page ===
-Contributors: bplugins, abuhayat, charlescormier
+=== PDF Embed Block – Embed PDF Files in Posts or Pages ===
+Contributors: bplugins, abuhayat, freemius, shamim10
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, pdf, embed pdf, display pdf, Gutenberg block
 Requires at least: 6.2+
-Tested up to: 6.8.1
+Tested up to: 6.8
 Stable tag: 1.0.2
 Requires PHP: 7.1
 License: GPLv3 or later
@@ -28,7 +28,7 @@ Whether you're a content creator, educator, or business professional, the PDF Em
 
 
 = How to use =
-- First, install the PDF Embed Block plugin
+- First, install the PDF Embed Block plugin.
 - Add the PDF Embed Block from the block category called "Widgets" in the Gutenberg editor.
 - You can change block settings from the right-side settings sidebar.
 - Enjoy!
@@ -111,7 +111,7 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 == Changelog ==
 
 = 1.0.2 =
-* Fix issue
+* Fix issue.
 
 = 1.0.1 =
 * API key settings.
