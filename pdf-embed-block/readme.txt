@@ -2,9 +2,9 @@
 Contributors: bplugins, abuhayat, freemius, shamim10
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, pdf, embed pdf, display pdf, Gutenberg block
-Requires at least: 6.2+
-Tested up to: 6.8
-Stable tag: 1.0.2
+Requires at least: 6.5+
+Tested up to: 6.9.1
+Stable tag: 1.2.0
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -18,17 +18,28 @@ Embedding a PDF through the Gutenberg block editor is now a breeze, thanks to th
 Whether you're a content creator, educator, or business professional, the PDF Embed Block plugin empowers you to enhance your WordPress posts and pages with rich, interactive PDF content. Say goodbye to the challenges of PDF integration and embrace the simplicity and efficiency of this plugin, making your web experience both dynamic and engaging.
 
 
-**[Demos](https://bblockswp.com/demo/pdf-embed-block/)**
+= Free Features =
+- **PDF Embed Block** – Easily embed PDF files in posts and pages.
+- **Responsive Width Control** – Adjust the width of the PDF viewer.
+- **Height Control** – Set the viewer height when using Sized Container mode.
+- **File Name Support** – Automatically display or edit the PDF file name.
+- **Gutenberg Block Support** – Fully compatible with the WordPress block editor.
+- **Shortcode Support** – Use the embed via shortcode as well.
+- **Cross-Browser Compatibility** – Works smoothly across modern browsers.
+- **Lightweight & Easy to Use** – Simple interface and quick setup.
 
 
-= Features =
-- **File Name**: Input the PDF file name upon insertion, with the option to edit the filename.
-- **Embed Mode**: Choose between two embed modes – Sized Container and In Line. In Sized Container, you can set the height of the PDF embedder.
-- **Width**: Set the width and align the embedder if the width is less than 100%.
+= Premium Features =
+- **Multiple Document Viewer Blocks** – Display PDF, Word, Excel, Google Docs, Slides and more with different viewer styles.
+- **Advanced Viewer Controls** – Show or hide Download, Print, and Fullscreen options.
+- **Enhanced Layout Customization** – Control padding, margin, border, and shadow.
+- **More Display Styles** – Choose from multiple modern document viewer layouts.
+- **Better Presentation Options** – Improve how documents appear inside your pages.
+- **Includes All Free Features** – Everything available in the free version is included.
 
 
 = How to use =
-- First, install the PDF Embed Block plugin.
+- First, install the PDF Embed Block plugin
 - Add the PDF Embed Block from the block category called "Widgets" in the Gutenberg editor.
 - You can change block settings from the right-side settings sidebar.
 - Enjoy!
@@ -103,18 +114,40 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 == Screenshots ==
 
-1. Settings
-2. PDF Embed (Sized Container)
-3. PDF Embed (In-Line)
+1. Add Block
+2. Settings Configuration
+3. Preview - ( PDF Embed )
+4. Preview - ( 3D Flipbook Viewer )
+5. Preview - ( Sleek PDF Viewer )
+6. Preview - ( Native PDF Viewer )
+7. Preview - ( Mozilla PDF Viewer )
+8. Preview - ( Doc Embedder )
+9. Preview - ( Word Viewer )
+10. Preview - ( Excel Embedder )
+11. Preview - ( Excel Viewer )
+12. Preview - ( Google Docs Viewer )
+13. Preview - ( Google Sheets )
+14. Preview - ( Google Slides )
+15. Preview - ( Powerpoint Embedder )
+16. Preview - ( Powerpoint Viewer )
+17. Shortcode Generator
+
 
 
 == Changelog ==
 
+= 1.2.0 - 08 Mar, 2026 =
+* Added 13 new document viewer blocks.
+* Added advanced viewer options (Download, Print, Fullscreen).
+* Added layout customization options (Padding, Margin, Border, Shadow).
+* Improved dashboard and block UI.
+* Performance improvements.
+
 = 1.0.2 =
-* Fix issue.
+* Fix issue
 
 = 1.0.1 =
-* API key settings.
+* API key settings
 
 = 1.0.0 =
 * Initial Release.

@@ -1,0 +1,34 @@
+{
+  "apiVersion": 3,
+  "name": "pebp/document-viewer-selector",
+  "version": "1.2.0",
+  "title": "Document Viewer Selector",
+  "category": "embed",
+  "description": "Choose a viewer to display PDF, Word, Excel, Google Docs, Slides and other documents.",
+  "keywords": [
+    "document viewer",
+    "pdf viewer",
+    "document embed",
+    "file viewer",
+    "viewer selector"
+  ],
+  "textdomain": "pdf-embed-block",
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false,
+    "inserter": false
+  },
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "editorStyle": "file:./index.css"
+}
