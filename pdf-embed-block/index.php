@@ -3,7 +3,7 @@
 /**
  * Plugin Name: PDF Embed Block
  * Description: Embed PDF files easily in your pages and posts.
- * Version: 1.2.0
+ * Version: 1.2.1
  * Author: bPlugins
  * Author URI: https://bplugins.com
  * License: GPLv3
@@ -16,18 +16,18 @@ if ( !defined( 'ABSPATH' ) ) {
 if ( function_exists( 'peb_fs' ) ) {
     peb_fs()->set_basename( false, __FILE__ );
 } else {
-    define( 'PEB_PLUGIN_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.2.0' ) );
+    define( 'PEB_PLUGIN_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.2.1' ) );
     define( 'PEB_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'PEB_DIR_PATH', plugin_dir_path( __FILE__ ) );
-    define( 'PEB_HAS_FRMS', file_exists( dirname( __FILE__ ) . '/freemius/start.php' ) );
+    define( 'PEB_HAS_FRMS', file_exists( dirname( __FILE__ ) . '/vendor/freemius/start.php' ) );
     if ( !function_exists( 'peb_fs' ) ) {
         function peb_fs() {
             global $peb_fs;
             if ( !isset( $peb_fs ) ) {
                 if ( PEB_HAS_FRMS ) {
-                    require_once PEB_DIR_PATH . '/freemius/start.php';
+                    require_once PEB_DIR_PATH . '/vendor/freemius/start.php';
                 } else {
-                    require_once PEB_DIR_PATH . '/freemius-lite/start.php';
+                    require_once PEB_DIR_PATH . '/vendor/freemius-lite/start.php';
                 }
                 $pebConfig = [
                     'id'                  => '21138',
