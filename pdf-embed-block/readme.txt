@@ -4,7 +4,7 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, pdf, embed pdf, display pdf, Gutenberg block
 Requires at least: 6.5+
 Tested up to: 6.9.1
-Stable tag: 1.2.1
+Stable tag: 1.2.2
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -64,7 +64,7 @@ Whether you're a content creator, educator, or business professional, the PDF Em
 
 [**Html5 Audio Player**](https://bplugins.com/products/html5-audio-player/) – Listen audios with awesome visuals.
 
-[**StreamCast**](https://bplugins.com/products/streamcast-radio-player/) – Customizable radio player with different skins.
+[**Panorama**](https://bplugins.com/products/panorama/) – Displays panoramic images/videos easily on your WordPress site.
 
 [**3D Viewer**](https://bplugins.com/products/3d-viewer/) – Embed 3D models and 3D products with interaction.
 
@@ -135,6 +135,9 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 
 == Changelog ==
+
+= 1.2.2 - 15 Mar, 2026 =
+* Update admin dashboard
 
 = 1.2.1 - 14 Mar, 2026 =
 * Added ‘Get All Features’ popover for Pro blocks
