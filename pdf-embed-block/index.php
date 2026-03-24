@@ -3,7 +3,7 @@
 /**
  * Plugin Name: PDF Embed Block
  * Description: Embed PDF files easily in your pages and posts.
- * Version: 1.2.2
+ * Version: 1.2.3
  * Author: bPlugins
  * Author URI: https://bplugins.com
  * License: GPLv3
@@ -16,7 +16,7 @@ if ( !defined( 'ABSPATH' ) ) {
 if ( function_exists( 'peb_fs' ) ) {
     peb_fs()->set_basename( false, __FILE__ );
 } else {
-    define( 'PEB_PLUGIN_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.2.2' ) );
+    define( 'PEB_PLUGIN_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.2.3' ) );
     define( 'PEB_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'PEB_DIR_PATH', plugin_dir_path( __FILE__ ) );
     define( 'PEB_HAS_FRMS', file_exists( dirname( __FILE__ ) . '/vendor/freemius/start.php' ) );
@@ -35,7 +35,7 @@ if ( function_exists( 'peb_fs' ) ) {
                     'premium_slug'        => 'pdf-embed-block-pro',
                     'type'                => 'plugin',
                     'public_key'          => 'pk_aaf93da06d368386d3fd060373257',
-                    'is_premium'          => true,
+                    'is_premium'          => PEB_HAS_FRMS,
                     'premium_suffix'      => 'Pro',
                     'has_premium_version' => true,
                     'has_addons'          => false,

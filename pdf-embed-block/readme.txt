@@ -4,7 +4,7 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, pdf, embed pdf, display pdf, Gutenberg block
 Requires at least: 6.5+
 Tested up to: 6.9.1
-Stable tag: 1.2.2
+Stable tag: 1.2.3
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -16,6 +16,9 @@ Easily embed PDF files in your WordPress posts and pages with the PDF Embed Bloc
 Embedding a PDF through the Gutenberg block editor is now a breeze, thanks to the PDF Embed Block plugin. Tackling the once daunting task of PDF integration is made seamless, allowing you to effortlessly embed your PDF files directly into the block editor, ensuring a smooth and consistent experience across all browsers. This plugin leverages the robust capabilities of the Adobe PDF Viewer API to bring you a powerful and user-friendly solution.
 
 Whether you're a content creator, educator, or business professional, the PDF Embed Block plugin empowers you to enhance your WordPress posts and pages with rich, interactive PDF content. Say goodbye to the challenges of PDF integration and embrace the simplicity and efficiency of this plugin, making your web experience both dynamic and engaging.
+
+
+[**Live Demo**](https://bplugins.com/products/pdf-embed-block/#demos) | [**Try The Pro**](https://bplugins.com/products/pdf-embed-block/pricing)
 
 
 = Free Features =
@@ -53,7 +56,7 @@ Whether you're a content creator, educator, or business professional, the PDF Em
 
 ### Check out the Parent Plugin of this plugin-
 
-[**B Blocks**](https://bblockswp.com) – A blocks collection and page building tool for Gutenberg.
+[**bBlocks**](https://bblockswp.com) – A blocks collection and page building tool for Gutenberg.
 
 
 ### Check out our other WordPress Plugins-
@@ -135,6 +138,9 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 
 == Changelog ==
+
+= 1.2.3 - 24 Mar, 2026 =
+* Resolved an issue where the free version incorrectly prompted for a premium license key during automatic updates.
 
 = 1.2.2 - 15 Mar, 2026 =
 * Update admin dashboard
