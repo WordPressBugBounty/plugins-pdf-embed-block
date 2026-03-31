@@ -8,6 +8,7 @@ class Init {
     }
 
     function onInit() {
+
 		register_setting(
 			'pebPluginSettings',
 			'pebAPIKey',

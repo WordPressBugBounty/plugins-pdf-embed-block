@@ -4,7 +4,7 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, pdf, embed pdf, display pdf, Gutenberg block
 Requires at least: 6.5+
 Tested up to: 6.9.1
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -138,6 +138,10 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 
 == Changelog ==
+
+= 1.2.4 - 31 Mar, 2026 =
+* **Fixed:** PDF Embed issue where viewer appeared blank if "PDF File Name" was not set.
+* **Improved:** Eliminated Mozilla Viewer security and CORS errors by switching to a locally hosted PDF.js implementation.
 
 = 1.2.3 - 24 Mar, 2026 =
 * Resolved an issue where the free version incorrectly prompted for a premium license key during automatic updates.

@@ -17,25 +17,40 @@ class Enqueue {
             [], 
             PEB_PLUGIN_VERSION 
         );
-       
-        // dflip viewer js
-        wp_register_script(
-            'dflip-script',
-            PEB_DIR_URL . 'public/dflip/js/dflip.min.js',
-            ['jquery'],
-            PEB_PLUGIN_VERSION ,
+
+         if ( function_exists('peb_fs') && peb_fs()->can_use_premium_code() ) {
+
+                wp_register_script(
+                    'dflip-script',
+                    PEB_DIR_URL . 'public/dflip/js/dflip.min.js',
+                    ['jquery'],
+                    PEB_PLUGIN_VERSION,
+                    true
+                );
+
+                wp_register_style(
+                    'dflip-style',
+                    PEB_DIR_URL . 'public/dflip/css/dflip.min.css',
+                    [],
+                    PEB_PLUGIN_VERSION
+                );
+        }
+
+         wp_enqueue_script(
+            'peb-script',
+            PEB_DIR_URL . 'build/blocks/mozila-viewer/index.js',
+            ['wp-element'],
+            PEB_PLUGIN_VERSION,
             true
-        );
-    
-        // dflip viewer css
-        wp_register_style(
-            'dflip-style',
-            PEB_DIR_URL . 'public/dflip/css/dflip.min.css',
-            [],
-            PEB_PLUGIN_VERSION 
-        );
+        );  
         
-        
+         wp_localize_script(
+            'peb-script',
+            'BPLG_DATA',
+            [
+                'pdfjs_url' => PEB_DIR_URL . 'public/pdfjs/web/viewer.html'
+            ]
+        );
 	}
 
 	function scriptLoaderTag( $tag, $handle, $src ){
