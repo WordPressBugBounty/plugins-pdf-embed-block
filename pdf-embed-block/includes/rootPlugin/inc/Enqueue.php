@@ -7,6 +7,8 @@ class Enqueue {
         add_action( 'enqueue_block_assets', [$this, 'enqueueBlockAssets'] );
 		add_action( 'script_loader_tag', [$this, 'scriptLoaderTag'], 10, 3 );
         add_action( 'admin_enqueue_scripts', [$this, 'adminEnqueueScripts']);
+        add_action( 'wp_head', [$this, 'injectBplgData'] );
+        add_action( 'admin_head', [$this, 'injectBplgData'] );
     }
 
     function enqueueBlockAssets(){
@@ -36,21 +38,29 @@ class Enqueue {
                 );
         }
 
-         wp_enqueue_script(
-            'peb-script',
-            PEB_DIR_URL . 'build/blocks/mozila-viewer/index.js',
-            ['wp-element'],
-            PEB_PLUGIN_VERSION,
-            true
-        );  
-        
-         wp_localize_script(
-            'peb-script',
-            'BPLG_DATA',
+        $disabled_blocks = get_option( 'pebBlocks', [] );
+        if ( ! is_array( $disabled_blocks ) ) {
+            $disabled_blocks = [];
+        }
+
+        $is_premium      = function_exists('peb_fs') && peb_fs()->can_use_premium_code();
+
+        wp_localize_script(
+            'wp-blocks',
+            'PEB_BLOCK_DATA',
             [
-                'pdfjs_url' => PEB_DIR_URL . 'public/pdfjs/web/viewer.html'
+                'disabledBlocks' => $disabled_blocks,
+                'isPremium'      => $is_premium,
             ]
         );
+
+	}
+
+	function injectBplgData() {
+		$data = [
+			'pdfjs_url' => PEB_DIR_URL . 'public/pdfjs/web/viewer.html'
+		];
+		echo '<script>window.BPLG_DATA = ' . wp_json_encode( $data ) . ';</script>' . "\n";
 	}
 
 	function scriptLoaderTag( $tag, $handle, $src ){

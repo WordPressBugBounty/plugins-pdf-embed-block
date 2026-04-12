@@ -71,7 +71,7 @@ class Init {
 
 	function peb_register_blocks() {
 		$blocks_path = PEB_DIR_PATH . '/build/blocks/';
-	 	$all_blocks  = glob( $blocks_path . '*', GLOB_ONLYDIR );
+		$all_blocks  = glob( $blocks_path . '*', GLOB_ONLYDIR );
 
 		if ( empty( $all_blocks ) ) {
 			return;
@@ -83,6 +83,37 @@ class Init {
 			$disabled_blocks = [];
 		}
 
+		$is_premium = peb_fs()->can_use_premium_code();
+
+		wp_register_script( 'peb-common-data', PEB_DIR_URL . 'build/peb-common-data.js', [], PEB_PLUGIN_VERSION, true );
+
+		// Register shared assets for pro blocks
+		if ( $is_premium ) {
+			$asset_path = PEB_DIR_PATH . 'build/blocks/index.asset.php';
+			$asset_file = file_exists( $asset_path )
+				? include $asset_path
+				: [
+					'dependencies' => [ 'wp-blocks', 'wp-element', 'wp-i18n' ],
+					'version'      => PEB_PLUGIN_VERSION,
+				];
+
+			wp_register_script(
+				'peb-pro-blocks',
+				PEB_DIR_URL . 'build/blocks/index.js',
+				$asset_file['dependencies'],
+				$asset_file['version'],
+				true
+			);
+
+			wp_register_style(
+				'peb-pro-blocks',
+				PEB_DIR_URL . 'build/blocks/index.css',
+				[],
+				$asset_file['version']
+			);
+		}
+
+
 		foreach ( $all_blocks as $block_path ) {
 			$block_name = basename( $block_path );
 
@@ -90,13 +121,16 @@ class Init {
 				continue;
 			}
 
-			if ( $block_name === 'pdf-embed' ) {
+			if ( $block_name === 'pdf-embed' || $block_name === 'parent' ) {
 				register_block_type( $block_path );
 				continue;
 			}
 
-			if ( peb_fs()->can_use_premium_code() ) {
-				register_block_type( $block_path );
+			if ( $is_premium ) {
+				register_block_type( $block_path, [
+					'editor_script' => 'peb-pro-blocks',
+					'editor_style'  => 'peb-pro-blocks',
+				] );
 			}
 		}
 	}
