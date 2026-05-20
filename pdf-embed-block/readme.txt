@@ -3,13 +3,13 @@ Contributors: bplugins, abuhayat, freemius, shamim10
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, pdf, embed pdf, display pdf, Gutenberg block
 Requires at least: 6.5+
-Tested up to: 6.9.1
+Tested up to: 6.9.4
 Stable tag: 1.2.5
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Easily embed PDF files in your WordPress posts and pages with the PDF Embed Block plugin.
+Easily embed PDF files in your WordPress posts and pages with the PDF Embed Block plugin
 
 == Description ==
 
