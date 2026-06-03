@@ -2,14 +2,14 @@
 Contributors: bplugins, abuhayat, freemius, shamim10
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, pdf, embed pdf, display pdf, Gutenberg block
-Requires at least: 6.5+
-Tested up to: 6.9.4
-Stable tag: 1.2.5
+Requires at least: 6.5
+Tested up to: 7.0
+Stable tag: 1.3.0
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Easily embed PDF files in your WordPress posts and pages with the PDF Embed Block plugin
+Easily embed PDF files in your WordPress posts and pages with the PDF Embed Block plugin.
 
 == Description ==
 
@@ -48,6 +48,18 @@ Whether you're a content creator, educator, or business professional, the PDF Em
 - Enjoy!
 
 * For installation help click on Installation Tab
+
+
+== Source Code ==
+
+You can find the source code, report bugs, and contribute to the development of this plugin on our GitHub repository: 
+[**PDF Embed Block on GitHub**](https://github.com/bPlugins/pdf-embed-block-free)
+
+= bpl-tools =
+* Source / GitHub: https://github.com/bPlugins/bpl-tools
+* License: GPL-2.0-or-later – https://www.gnu.org/licenses/gpl-2.0.html
+* Purpose: Shared utility library providing admin dashboard components and common Gutenberg editor controls.
+* External Services: The library may connect to bPlugins, WordPress.org, and Freemius services for product data and checkout functionality. See full details: https://github.com/bPlugins/bpl-tools#external-requests--why-they-are-made
 
 
 = Feedback =
@@ -138,6 +150,14 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 
 == Changelog ==
+
+= 1.3.0 - 03 June, 2026 =
+* **Feature:** Added "Delete Data on Uninstall" setting in the admin settings dashboard to safely clear custom post data and API keys on plugin deletion.
+* **Updated:** Redesigned the shortcode copy-to-clipboard UI column in the print CPT admin table for a better user experience.
+* **Improved:** Enhanced block editor canvas compatibility. The PDF viewer now loads and renders correctly inside Gutenberg's isolated editor canvas iframe.
+* **Improved:** Unlocked previously locked pro fields in the Gutenberg editor and introduced a clean, non-intrusive notices UI to display premium feature requirements.
+* **Fixed:** Resolved block focus loss and selection issues inside Gutenberg by preventing the PDF iframe from stealing focus, ensuring the block settings panel remains open.
+* **Fixed:** Resolved the "DivId is not present in HTML document" console error caused by character sanitization mismatches with the Adobe PDF Embed SDK.
 
 = 1.2.5 - 13 Apr, 2026 =
 * **Fixed:** Minor bug fixes and general optimizations for smoother performance.
