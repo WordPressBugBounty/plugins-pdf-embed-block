@@ -3,7 +3,7 @@
  * Plugin Name: PDF Embed Block – Embed PDF Files in Posts or Pages
  * Plugin URI: https://bplugins.com/products/pdf-embed-block
  * Description: Embed PDF files easily in your pages and posts.
- * Version: 1.3.0
+ * Version: 1.3.1
  * Author: bPlugins
  * Author URI: https://bplugins.com
  * License: GPLv3
@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( function_exists( 'peb_fs' ) ) {
     peb_fs()->set_basename( true, __FILE__ );
 } else {
-    define( 'PEB_PLUGIN_VERSION', isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.3.0' );
+    define( 'PEB_PLUGIN_VERSION', isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.3.1' );
     define( 'PEB_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'PEB_DIR_PATH', plugin_dir_path( __FILE__ ) );
 

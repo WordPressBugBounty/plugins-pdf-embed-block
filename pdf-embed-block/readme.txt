@@ -4,7 +4,7 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, pdf, embed pdf, display pdf, Gutenberg block
 Requires at least: 6.5
 Tested up to: 7.0
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -56,6 +56,7 @@ You can find the source code, report bugs, and contribute to the development of 
 [**PDF Embed Block on GitHub**](https://github.com/bPlugins/pdf-embed-block-free)
 
 = bpl-tools =
+
 * Source / GitHub: https://github.com/bPlugins/bpl-tools
 * License: GPL-2.0-or-later – https://www.gnu.org/licenses/gpl-2.0.html
 * Purpose: Shared utility library providing admin dashboard components and common Gutenberg editor controls.
@@ -148,8 +149,10 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 17. Shortcode Generator
 
 
-
 == Changelog ==
+
+= 1.3.1 - 14 June, 2026 =
+* **Updated:** Modernized the admin settings dashboard layout.
 
 = 1.3.0 - 03 June, 2026 =
 * **Feature:** Added "Delete Data on Uninstall" setting in the admin settings dashboard to safely clear custom post data and API keys on plugin deletion.

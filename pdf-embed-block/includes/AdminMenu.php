@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class AdminMenu  {
+class AdminMenu {
     function __construct() {
         add_action('admin_menu', [$this, 'adminMenu']);
     }
@@ -30,6 +30,7 @@ class AdminMenu  {
                     'version' => PEB_PLUGIN_VERSION,
                     'isPremium' => false,
                     'hasPro' => false,
+                    'adminUrl' => admin_url(),
                     'deleteDataOnUninstall' => (bool) get_option( 'peb_delete_data_on_uninstall', false ),
                     'uninstallNonce'        => wp_create_nonce( 'peb_uninstall_nonce' ),
                 ] ) ); ?>'
