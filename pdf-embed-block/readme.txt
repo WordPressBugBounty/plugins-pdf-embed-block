@@ -1,10 +1,10 @@
-=== PDF Embed Block – Embed PDF Files in Posts or Pages ===
+=== PDF Embed Block – share documents right inside your posts ===
 Contributors: bplugins, abuhayat, freemius, shamim10
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, pdf, embed pdf, display pdf, Gutenberg block
 Requires at least: 6.5
 Tested up to: 7.0
-Stable tag: 1.3.2
+Stable tag: 1.3.3
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -23,6 +23,8 @@ Whether you're a content creator, educator, or business professional, the PDF Em
 
 = Free Features =
 - **PDF Embed Block** – Easily embed PDF files in posts and pages.
+- **Global Viewer Settings Profile** – Configure site-wide default viewer settings (Download, Print, Fullscreen) from the dedicated Settings page.
+- **Viewer Toolbar Controls** – Show or hide Download PDF, Print PDF, and Fullscreen Mode toggles.
 - **Responsive Width Control** – Adjust the width of the PDF viewer.
 - **Height Control** – Set the viewer height when using Sized Container mode.
 - **File Name Support** – Automatically display or edit the PDF file name.
@@ -34,7 +36,6 @@ Whether you're a content creator, educator, or business professional, the PDF Em
 
 = Premium Features =
 - **Multiple Document Viewer Blocks** – Display PDF, Word, Excel, Google Docs, Slides and more with different viewer styles.
-- **Advanced Viewer Controls** – Show or hide Download, Print, and Fullscreen options.
 - **Enhanced Layout Customization** – Control padding, margin, border, and shadow.
 - **More Display Styles** – Choose from multiple modern document viewer layouts.
 - **Better Presentation Options** – Improve how documents appear inside your pages.
@@ -150,6 +151,11 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 
 == Changelog ==
+
+= 1.3.3 - 09 Aug, 2026 =
+* **Added:** Global PDF Viewer Settings Profile to configure default Download, Print, and Fullscreen options site-wide.
+* **Added:** Dedicated Settings submenu page under the PDF Embeds menu in WP Admin.
+* **Improved:** Unlocked Show Download PDF, Show Print PDF, and Show Fullscreen Mode options for all free users.
 
 = 1.3.2 - 13 Jul, 2026 =
 * **Added:** Elementor getting started instructions.

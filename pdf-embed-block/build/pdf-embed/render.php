@@ -3,7 +3,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
     $id = wp_unique_id( 'pebPDFEmbed-' ); 
-    $props = [ 'attributes' => $attributes, 'pebAPIKey' => get_option( 'pebAPIKey' )]; 
+    $global_options = function_exists( 'pebGetGlobalViewerOptions' ) ? pebGetGlobalViewerOptions() : [];
+    $props = [
+        'attributes'          => $attributes,
+        'pebAPIKey'           => get_option( 'pebAPIKey' ),
+        'globalViewerOptions' => $global_options,
+    ]; 
 ?> 
 
 <div 
