@@ -1,5 +1,5 @@
 === PDF Embed Block – share documents right inside your posts ===
-Contributors: bplugins, abuhayat, freemius, shamim10
+Contributors: bplugins, abuhayat, freemius
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, pdf, embed pdf, display pdf, Gutenberg block
 Requires at least: 6.5
